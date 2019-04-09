@@ -21,6 +21,9 @@
 #define __OSDEP_LINUX_SERVICE_H_
 
 #include <linux/version.h>
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 11, 0)
+#include <linux/sched/signal.h>
+#endif
 #include <linux/spinlock.h>
 #include <linux/compiler.h>
 #include <linux/kernel.h>
