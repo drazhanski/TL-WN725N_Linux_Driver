@@ -13,8 +13,9 @@ You could use this patch  at your own risk.
 # Compile the Driver 
 Use Terminal to go to the driver directory and run the following commands to compile the driver: 
 
-$ make clean 
-$ make 
+$ make clean
+
+$ make
 
 After compiling, you can see a name of the chip.ko file is stored in the directory of the driver.
 
