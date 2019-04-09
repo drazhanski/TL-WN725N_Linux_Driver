@@ -12,19 +12,26 @@ You could use this patch  at your own risk.
 
 # Compile the Driver 
 Use Terminal to go to the driver directory and run the following commands to compile the driver: 
+
 $ make clean 
 $ make 
+
 After compiling, you can see a name of the chip.ko file is stored in the directory of the driver.
 
 # Load the Driver
 Here we show the 8188eu.ko wireless driver loading process as an example. Run the following command to load the driver: 
+
 $ sudo cp 8188eu.ko /lib/modules/[kernel version]/kernel/drivers/net/wireless/  
-    #[kernel version] is the directory name of the system kernel version  
+    #[kernel version] is the directory name of the system kernel version
+
 $ sudo depmod –a 
+
 $ sudo modprobe 8188eu.ko 
  
 Or directly use insmod to load the driver: 
+
 $ sudo insmod 8188eu.ko 
  
 After loading the driver, run the following command to check if the driver is successfully loaded:
+
 $ lsmod
