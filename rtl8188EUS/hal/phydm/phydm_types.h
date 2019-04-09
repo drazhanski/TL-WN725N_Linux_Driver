@@ -137,8 +137,12 @@ enum rt_spinlock_type {
 
 	#define	bool	BOOLEAN
 
-	#define	timer_list	_RT_TIMER
-	
+
+#if defined (LINUX_VERSION_CODE) && (LINUX_VERSION_CODE >= KERNEL_VERSION(4, 15, 0))
+	#define legacy_timer_emu _RT_TIMER
+#else
+	#define	timer_list	 _RT_TIMER
+#endif	
 
 #elif (DM_ODM_SUPPORT_TYPE == ODM_AP)
 
