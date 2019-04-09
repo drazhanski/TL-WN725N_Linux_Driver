@@ -8,7 +8,7 @@ Operating System: Linux (kernel 2.6.18 ~ 4.4.3)
 3. Support monitor mode on ubuntu and mint.
 4. This is a beta version; unknown bugs may still exist. The formal version is coming soon.
 
-As I need it to work on Ubuntu 16.04 I fix the code for kernel 4.15.0-45-generic. The fixed driver worked on this kernel.
+As I need it to work on Ubuntu 16.04 I fix the code for kernel **4.15.0-45-generic**. The fixed driver worked on this kernel.
 
 You could use this patch  at your own risk.
 
