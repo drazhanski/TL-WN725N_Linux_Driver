@@ -1,13 +1,15 @@
 # TL-WN725N_Linux_Driver
 Initial version of driver's code was got from page https://www.tp-link.com/us/support/download/tl-wn725n/v3/ 
  (https://static.tp-link.com/2018/201805/20180521/TP-Link_Driver_Linux_series7_beta.zip)
- Operating System: Linux (kernel 2.6.18 ~ 4.4.3)
+
+Operating System: Linux (kernel 2.6.18 ~ 4.4.3)
 1. For TL-WN722N v3/TL-WN725N v3.
 2. For Linux kernel 2.6.18 ~ 4.4.3.
 3. Support monitor mode on ubuntu and mint.
 4. This is a beta version; unknown bugs may still exist. The formal version is coming soon.
 
 As I need it to work on Ubuntu 16.04 I fix the code for kernel 4.15.0-45-generic. The fixed driver worked on this kernel.
+
 You could use this patch  at your own risk.
 
 # Compile the Driver 
